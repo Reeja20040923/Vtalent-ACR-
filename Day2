@@ -1,0 +1,18 @@
+Types of Java Applications:
+ 1.Standalone Applications
+ 2.Web Applications
+ 3.Enterprize Applications
+ 4.Mobile Applications
+
+1.Standalone Applications:
+ - A program is run by as separate computer process without adding an existing  files process is known as standalone applications.
+ - It doesn't require operating system process.
+ - AWT( Abstract Window Toolkit ) & Swing are used to create standalone application.
+
+2.Web Application:
+ -A client Server software application which is run by the client. 
+ - Web applications include mail, online retail sales, Wikipedia's information.
+ - Ex: Servlet, Jsp
+
+3.Enterprise Applications:
+ - Related to middleware applications
