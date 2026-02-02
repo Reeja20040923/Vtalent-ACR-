@@ -1,0 +1,29 @@
+Type casting:
+In Java is the process of converting a value from one data type to another. This is necessary when you need to store a value of one type in a variable of another type or perform operations on variables of different types. 
+There are two main types of casting in Java: Widening Casting (automatic) and Narrowing Casting (manual). 
+
+1.Widening Casting (Implicit)
+Widening casting converts a smaller data type to a larger data type, which is done automatically by the compiler because there is no risk of data loss. 
+Direction: byte -> short -> char -> int -> long -> float -> double.
+  Ex: int myInt = 9;
+      double myDouble = myInt; // Automatic casting: int to double
+
+       System.out.println(myInt);    // Outputs 9
+      System.out.println(myDouble); // Outputs 9.0
+
+2.Narrowing Casting (Explicit)
+Narrowing casting converts a larger data type to a smaller data type, and it must be done manually by the programmer using the cast operator (). This is required because narrowing may result in data loss (e.g., losing decimal points or exceeding the range of the smaller type). 
+Direction: double -> float -> long -> int -> char -> short -> byte.
+Syntax: destination_datatype = (target_datatype) variable;
+double myDouble = 9.78d;
+int myInt = (int) myDouble; // Manual casting: double to int
+
+System.out.println(myDouble); // Outputs 9.78
+System.out.println(myInt);    // Outputs 9 (decimal part is lost)
+
+Casting with Reference Types (Objects)
+Type casting also applies to non-primitive data types (objects) that are related by inheritance. 
+Upcasting: Converting a subclass object reference to a superclass reference. This is an automatic (implicit) and safe process, similar to widening for primitives.
+Downcasting: Converting a superclass object reference to a subclass reference. This must be done explicitly using the cast operator and can lead to a ClassCastException at runtime if the object is not actually an instance of the target subclass. The instanceof operator is often used to prevent this error. 
+
+ 
