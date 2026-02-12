@@ -1,0 +1,29 @@
+package Vtalent.com.Feb11;
+import java.util.Scanner;
+public class Armstrong {
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        int num = sc.nextInt();
+        int digits = 0;
+        int sum = 0;
+        int original = num;
+        while(num!=0){
+            num/=10;
+            digits++;
+        }
+        int temp = original;
+        while(temp!=0){
+            int digit = temp%10;
+            sum += Math.pow(digit, digits);
+            temp/=10;
+        }
+        if(sum==original){
+            System.out.println("Armstrong number");
+        }
+        else{
+            System.out.println("Not Armstrong number");
+        }
+        sc.close();
+
+    }
+}
