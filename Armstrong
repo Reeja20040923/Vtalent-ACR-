@@ -18,10 +18,10 @@ public class Armstrong {
             temp/=10;
         }
         if(sum==original){
-            System.out.println("Armstrong number");
+            System.out.println("Armstrong number : " + num);
         }
         else{
-            System.out.println("Not Armstrong number");
+            System.out.println("Not an Armstrong number");
         }
         sc.close();
 
