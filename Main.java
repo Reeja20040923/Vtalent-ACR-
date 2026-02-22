@@ -2,6 +2,7 @@ package Vtalent.com.Feb;
 
 import java.util.Scanner;
 
+//implements exception handling in java
 class InvalidMarkException extends Exception{
     InvalidMarkException(String message){
         super(message);
@@ -34,4 +35,5 @@ public class Main{
         }
         sc.close();
     }
+
 }
