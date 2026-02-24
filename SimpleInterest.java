@@ -9,7 +9,8 @@ public class SimpleInterest {
         int t = sc.nextInt();
 
         double SimpleInt = (p*r*t)/100;
-        System.out.println("Simple Interest : " +SimpleInt);
+        System.out.println("Simple Interest for given details is : " +SimpleInt);
         sc.close();
     }
 }
+
