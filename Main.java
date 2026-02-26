@@ -2,7 +2,10 @@
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        String name = "Reeja"
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the name");
+        String name = "Reeja";
+        System.out.println(name);
 
     }
 }
