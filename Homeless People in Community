@@ -1,0 +1,34 @@
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int[] people  = new int[n];
+        int[] house = new int[n];
+        boolean[] used = new boolean[n];
+
+        for(int i=0;i<n;i++){
+            people[i] = sc.nextInt();
+        }
+        for(int i=0;i<n;i++){
+            house[i] = sc.nextInt();
+        }
+        //int i=0,  j=0;
+        int notallotted = 0;
+
+        for(int i=0;i<n;i++){
+            boolean allotted = false;
+            for(int j=0;j<n;j++){
+                if(!used[j] && house[j] >= people[i]){
+                    used[j] = true;
+                    allotted = true;
+                    break;
+                }
+            }
+            if(!allotted){
+                notallotted++;
+            }
+        }
+        System.out.println(notallotted);
+    }
+}
